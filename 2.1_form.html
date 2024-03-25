@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Creat an Account</h1>
+    <form action="process.php">
+        <div>
+            <label for="Email">Email</label><br>
+            <input type="Email" id="Email" name="Email">
+        </div>
+        <div>
+            <label for="passowrd">Password</label><br>
+            <input type="passowrd" id="password" name="password" >
+        </div>
+        <div>
+            <label for="age">Age</label><br>
+            <select name="age" id="age" placeholder="Select Age">
+            <option value="under18">Under 18</option>
+            <option value="18-30">18-30</option>
+            <option value="31-50">31-50</option>
+            <option value="above50">Above 50</option>
+        </select>
+        </div>
+        <div>
+            <label for="message">Tell us a little about yourself:</label><br>
+            <textarea type="message" id="message" cols="50" rows="7"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="agreement" value="terms" id="agreement">I agree to the <a href="terms and conditions.com" target="_blank">terms of service</a></label>
+        </div><br>
+    <button type="submit">Sign Up</button>
+
+    </form>
+    
+</body>
+</html>
