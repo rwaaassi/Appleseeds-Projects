@@ -1,0 +1,18 @@
+li {
+    display: inline-block;
+    padding: 20px;
+}
+a:link {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+a:visited {
+    color: rgb(45, 6, 134);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+a:hover {
+    background-color: rgb(214, 149, 207);
+    
+}
