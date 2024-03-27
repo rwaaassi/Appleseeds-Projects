@@ -1,0 +1,101 @@
+
+body{
+    background-color: rgb(176, 216, 216);
+}
+main {
+    margin:auto auto;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.flat1 {
+    margin-right: 30px;
+    padding: 10px;
+    background-color: rgb(59, 59, 247);
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+.flat2 {
+    margin-right: 30px;
+    background-color: rgb(205, 205, 28);
+    color: white;
+    border: none ;
+}
+.round1 {
+    margin-right: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: green;
+    border: none;
+    color: white;
+}
+.round2 {
+    margin-right: 30px;
+    border-radius: 20px;
+    background-color: hotpink;
+    border: none;
+    color: white;
+}
+.fghost1 {
+    margin-right: 30px;
+    padding: 10px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-color: rgb(204, 19, 19);
+    cursor: pointer;
+
+}
+.fghost2 {
+    margin-right: 30px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-color: rgb(58, 20, 207);
+    cursor: pointer;
+
+}
+.rghost1 {
+    margin-right: 30px;
+    padding: 10px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border-color: rgb(180, 180, 19);
+    cursor: pointer;
+
+}
+.rghost2 {
+    margin-right: 30px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border-color: rgb(143, 13, 191);
+    cursor: pointer;
+
+}
+:hover.rghost1 {
+    background-color: rgb(180, 180, 19);
+}
+:hover.rghost2 {
+    background-color: rgb(143, 13, 191);
+}
+:hover.fghost1 {
+    background-color: rgb(204, 19, 19);
+}
+:hover.fghost2 {
+    background-color: rgb(58, 20, 207);
+}
+:hover.round1 {
+    background-color: rgb(18, 72, 9);
+}
+:hover.round2 {
+    background-color: rgb(143, 19, 122);
+}
+:hover.flat1 {
+    background-color: rgb(5, 6, 116);
+}
+:hover.flat2 {
+    background-color: rgb(162, 156, 30);
+}
