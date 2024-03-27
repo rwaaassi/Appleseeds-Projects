@@ -1,0 +1,48 @@
+body {
+    display: flex;
+}
+.container {
+    position: relative;
+    width: 1500px;
+    height: 700px;
+
+}
+.one {
+    border: 4px solid black;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.two {
+    border: 4px solid black;
+    margin: 20px;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 130px;
+    left: 120px;
+    background-color: white;
+    
+}
+.three {
+    border: 4px solid black;
+    margin: 20px;
+    width: 700px;
+    height: 200px;
+    position: absolute;
+    top: 300px;
+    right: 740px;
+    background-color: white;
+}
+.four {
+    border: 4px solid black;
+    margin: 20px;
+    width: 70px;
+    height: 500px;
+    position: absolute;
+    left: 600px;
+    bottom: 60px;
+    background-color: white;
+
+}
