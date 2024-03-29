@@ -1,0 +1,28 @@
+.container {
+    box-sizing: border-box;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(195, 218, 239);
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:12px;
+    flex-wrap: wrap;
+}
+li {
+    display: inline-block;
+    font-size: 13px;
+}
+.logo {
+    display: flex;
+    width: 1100px;
+    flex-wrap: wrap;
+}
+p {
+    font-weight: bold;
+}
