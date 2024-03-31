@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <style>
+        /* #data::before {
+            display: flex;
+        }
+        span:hover {
+            background-color: rgb(180, 180, 21);
+            border-radius: 6px;
+            color: blue;
+        }
+        span {
+            color: red;
+        } */
+        /* span[data-tooltip]:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            background-color: yellow;
+            color: blue;
+            padding: 5px 10px;
+            border-radius: 5px;
+            top: 25px;
+            left: 50%;
+            transform: translate(-50%);
+            white-space: nowrap;
+            z-index: 1;
+        } */
+        a {
+            /* padding: 0 14px; */
+            position: relative;
+            
+           
+        }
+        [data-tooltip]:hover::before {
+            content: attr(data-tooltip);
+            background-color: yellow;
+            color: blue;
+            position: absolute;
+            top: -17px;
+            width: 140px;
+            border-radius: 8px;
+        }
+        p {
+            background-color: rgb(204, 129, 228);
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <h1>Tooltip</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea esse explicabo eos earum distinctio aspernatur adipisci nisi similique! Cumque et neatae earum dolorum aliquam aut laudantium veniam eos est deserunt sequi error exceptursimos adipisci deserunt excepturi nesciunt ea repellendui fugit necessitatibus. Veniam harum quisquam nobis repudiss temporibus animi tenetur accusantium omnis sed fuga esse totam praesentium laudantium nam, ratione, hic dolore numquam? Optio rem temporibus totam ex veniam, explicabo deleniti tempore dolore delectus assumenda amet commodi. Voluptate nulla molestiae cum adipisci quo recusandae eveniet vitae ducimus iure reprehenderit dolorum, optio ex fugiat eos aut rem commodi, suscipit, mollitia perspiciatis dolore ipsa pariatur. Quasi odio natus qui totam repellat. Accusamus doloribus ratione placeat voluptate in ex nisi mollitia unde  neque? Aores desciunt at, ab quis nulla ipsum animi fuga facere, saepe harum fugiat nemo iusto quasi aut? Aut cumque nemo magni minus laborum facere, iure optio ad ab voluptates, enim molestias. Illo, ullam labore! <a href="#" data-tooltip="This is a great Tooltip" id="data">sequi at 33</a>, accusantium quo soluta exercitationem vero fugiat fugit optio minima similique reprehenderit perspiciatis dolorum laborum id esse fuficiis doloribus quod, molestias nisi quam dolorem maxime officia! Eum, deserunt tempora a accusantium, ut atque exercitationem aspernatur hic, voluptates rerum accusamus vero! Temciis ratione sint perspiciatis exercitationem facere voluptates, neque laborum sunt similique enim?</p>
+    
+    
+</body>
+</html>

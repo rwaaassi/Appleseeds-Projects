@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Border</title>
+    <style>
+        /* .outer {
+            background-color: black;
+            width: 200px;
+            height: 100px;
+            position: relative;
+            
+          
+        }
+        .inner {
+           color: #fff;
+           display: flex;
+           align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding: 35px;
+        } */
+     
+        /* div {
+
+  text-align: center;
+  width: 180px;
+  margin: auto;
+  background-color: black;
+  padding: 30px
+}
+.inner {
+  position: relative;
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
+  /* color: white;
+  width: 100px; */
+  
+
+
+           
+       /* vertical line */
+/* .inner::after {
+  content:'';
+  position: absolute;
+  background-color: orange;
+  width: 3px;
+  height: 30%;
+  top: 0;
+  left:-15px;
+  bottom: 0;
+  right:-15px;
+} */
+/* .inner::after {
+  content:'';
+  position: absolute;
+  background-color: orange;
+  width: 3px;
+  height: 30%;
+  bottom: 0;
+  right:-15px;
+} */
+
+/* horizontal line */
+/* .inner::before{
+  content:'';
+  position: absolute;
+  background-color: orange;
+  width: 20%;
+  height: 3px;
+  top: 0;
+  left:-12px;
+  bottom: 0;
+  right:45px;
+ 
+ 
+} */
+
+/* vertical line */
+/* .inner::after {
+  content:'';
+  position: absolute;
+  background-color: orange;
+  width: 3px;
+  height: 50%;
+  bottom: 0;
+  right:45px;
+ 
+} */
+/* horizontal line */
+/* .inner::before {
+  content:'';
+  position: absolute;
+  background-color: orange;
+  width: 20%;
+  height: 3px;
+  bottom: 0;
+  right:45px;
+ 
+} */
+body {
+    position: relative;
+}
+div {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    
+}
+/* Top Right Corner*/
+.top-right-corner::after {
+    content:'';
+  position: absolute;
+  background-color: orange;
+  width: 3px;
+  height: 15px;
+  top: 0;
+  left:-15px;
+  margin: 20px;
+}
+.top-right-corner::before {
+    content:'';
+  position: absolute;
+  background-color: orange;
+  width: 15px;
+  height: 3px;
+  top: 0;
+  left:-15px;
+  margin: 20px;
+}
+/* Bottom Right Corner*/
+.bottom-right-corner::after {
+    content:'';
+  position: absolute;
+  background-color: orange;
+  width: 3px;
+  height: 15px;
+  bottom: 0;
+  left:-15px;
+  margin: 20px;
+}
+.bottom-right-corner::before {
+    content:'';
+  position: absolute;
+  background-color: orange;
+  width: 15px;
+  height: 3px;
+  bottom: 0;
+  left:-15px;
+  margin: 20px;
+}
+/* Top Left Corner*/
+.top-left-corner::after {
+    content:'';
+  position: absolute;
+  background-color: orange;
+  width: 3px;
+  height: 15px;
+  top: 0;
+  right:45px;
+  margin: 20px;
+  margin-right: 84.2%;
+  
+}
+.top-left-corner::before {
+    content:'';
+  position: absolute;
+  background-color: orange;
+  width: 15px;
+  height: 3px;
+  top: 0;
+  right:45px;
+  margin: 20px;
+  margin-right: 84.2%;
+}
+/* Bottom Left Corner*/
+.bottom-left-corner::after {
+    content:'';
+  position: absolute;
+  background-color: orange;
+  width: 3px;
+  height: 15px;
+  bottom: 0;
+  right:45px;
+  margin: 20px;
+  margin-right: 84.2%;
+  
+}
+.bottom-left-corner::before {
+    content:'';
+  position: absolute;
+  background-color: orange;
+  width: 15px;
+  height: 3px;
+  bottom: 0;
+  right:45px;
+  margin: 20px;
+  margin-right: 84.2%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="top-right-corner">
+        <div class="bottom-right-corner">
+            <div class="top-left-corner">
+                 <div class="bottom-left-corner">
+            Cool Border
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
