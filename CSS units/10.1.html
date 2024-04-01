@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Typography</title>
+    <style>
+        /* body {
+            background: pink;
+        } */
+        header {
+            display: flex;
+            flex-direction: column;
+            padding: 70px;
+            background: pink;
+            height: 100vh;
+            width: 100vw;
+        }
+        p {
+            width: 50vw;
+        }
+        @media (min-width:1200px) {
+            header {
+                font-size: 3rem;
+            }
+        }
+        @media (max-width:1200px) {
+            header {
+                font-size: 2rem;
+            }
+        }
+        @media (max-width:900px) {
+            header {
+                font-size: 1.5rem;
+            }
+        }
+        @media (min-width:600px) and (max-width:899px) {
+            header {
+                font-size: 1rem;
+            }
+        }
+        @media (min-width:300px) and (max-width:599px)  {
+            header {
+                font-size: 0.5rem;
+            }
+        }
+        @media (min-width:1px) and (max-width:299px)  {
+            header {
+                font-size: 0.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Making Responsive Typography</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur ipsam deleniti cupiditate illum beatae nesciunt fugit perferendis commodi error neque.</p>
+    </header>
+    
+</body>
+</html>
