@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+        gap: 1rem;
+        justify-content: center;
+        background-color: aquamarine;
+      }
+      .item1 {
+        padding: 3rem;
+        border: 2px transparent;
+        background-color: pink;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        border-radius: 6px;
+      }
+      .item2 {
+        padding: 3rem;
+        border: 2px transparent;
+        background-color: rgb(222, 152, 163);
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        border-radius: 6px;
+      }
+      .item3 {
+        padding: 3rem;
+        border: 2px transparent;
+        background-color: rgb(198, 123, 135);
+
+        grid-column-start: 3;
+        grid-column-end: 5;
+        border-radius: 6px;
+      }
+      .item4 {
+        padding: 3rem;
+        border: 2px transparent;
+
+        background-color: rgb(160, 79, 93);
+
+        grid-column-start: 3;
+        grid-column-end: 4;
+        border-radius: 6px;
+      }
+      .item5 {
+        padding: 3rem;
+        border: 2px transparent;
+        background-color: rgb(129, 36, 52);
+        grid-column-start: 4;
+        grid-column-end: 5;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item1"></div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4"></div>
+      <div class="item5"></div>
+    </div>
+  </body>
+</html>

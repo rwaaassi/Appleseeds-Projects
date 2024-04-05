@@ -1,0 +1,189 @@
+/* Desktop */
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 5rem 30rem;
+  }
+  .grid {
+    max-width: 60rem;
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "sidebar1 content content sidebar2"
+      "footer footer footer footer";
+    gap: 1rem;
+    justify-content: center;
+    background-color: aquamarine;
+  }
+  .grid > div {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 3rem;
+  }
+  .item1 {
+    border: 2px transparent;
+    background-color: pink;
+    grid-area: header;
+    border-radius: 6px;
+  }
+  .item2 {
+    border: 2px transparent;
+    background-color: rgb(222, 152, 163);
+    grid-area: sidebar1;
+    border-radius: 6px;
+  }
+  .item3 {
+    border: 2px transparent;
+    background-color: rgb(198, 123, 135);
+    grid-area: content;
+    border-radius: 6px;
+  }
+  .item4 {
+    border: 2px transparent;
+
+    background-color: rgb(160, 79, 93);
+
+    grid-area: sidebar2;
+    border-radius: 6px;
+  }
+  .item5 {
+    border: 2px transparent;
+    background-color: rgb(129, 36, 52);
+    grid-area: footer;
+    border-radius: 6px;
+  }
+}
+/*Tablet*/
+@media only screen and (max-width: 770px) and (min-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 5rem 30rem;
+  }
+  .grid {
+    max-width: 60rem;
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "sidebar1 content content content"
+      "sidebar2 sidebar2 sidebar2 sidebar2"
+      "footer footer footer footer";
+    gap: 1rem;
+    justify-content: center;
+    background-color: aquamarine;
+  }
+  .grid > div {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 3rem;
+  }
+  .item1 {
+    border: 2px transparent;
+    background-color: pink;
+    grid-area: header;
+    border-radius: 6px;
+  }
+  .item2 {
+    border: 2px transparent;
+    background-color: rgb(222, 152, 163);
+    grid-area: sidebar1;
+    border-radius: 6px;
+  }
+  .item3 {
+    border: 2px transparent;
+    background-color: rgb(198, 123, 135);
+    grid-area: content;
+    border-radius: 6px;
+  }
+  .item4 {
+    border: 2px transparent;
+
+    background-color: rgb(160, 79, 93);
+
+    grid-area: sidebar2;
+    border-radius: 6px;
+  }
+  .item5 {
+    border: 2px transparent;
+    background-color: rgb(129, 36, 52);
+    grid-area: footer;
+    border-radius: 6px;
+  }
+}
+/* Mobile*/
+@media only screen and (max-width: 540px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 5rem 30rem;
+  }
+  .grid {
+    max-width: 60rem;
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "sidebar1 sidebar1 sidebar1 sidebar1"
+      "content content content content"
+      "sidebar2 sidebar2 sidebar2 sidebar2"
+      "footer footer footer footer";
+    gap: 1rem;
+    justify-content: center;
+    background-color: aquamarine;
+  }
+  .grid > div {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 3rem;
+  }
+  .item1 {
+    border: 2px transparent;
+    background-color: pink;
+    grid-area: header;
+    border-radius: 6px;
+  }
+  .item2 {
+    border: 2px transparent;
+    background-color: rgb(222, 152, 163);
+    grid-area: sidebar1;
+    border-radius: 6px;
+  }
+  .item3 {
+    border: 2px transparent;
+    background-color: rgb(198, 123, 135);
+    grid-area: content;
+    border-radius: 6px;
+  }
+  .item4 {
+    border: 2px transparent;
+
+    background-color: rgb(160, 79, 93);
+
+    grid-area: sidebar2;
+    border-radius: 6px;
+  }
+  .item5 {
+    border: 2px transparent;
+    background-color: rgb(129, 36, 52);
+    grid-area: footer;
+    border-radius: 6px;
+  }
+}
