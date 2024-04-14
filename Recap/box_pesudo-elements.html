@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Pseudo Elements</title>
+    <style>
+      :root {
+        --bg-color: rgb(66, 63, 63);
+        --text-color: white;
+        --box-width: 40px;
+        --box-hight: 40px;
+        --duration: 3s;
+      }
+
+      body {
+        background: black;
+      }
+      .container {
+        background: white;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .box-1 {
+        width: var(--box-width);
+        height: var(--box-hight);
+        padding: 5px;
+        background: var(--bg-color);
+        color: var(--text-color);
+        text-shadow: orange;
+        border-radius: 10px;
+        cursor: pointer;
+        transform: rotate(20deg);
+      }
+      .box-2 {
+        width: var(--box-width);
+        height: var(--box-hight);
+        padding: 5px;
+        background: var(--bg-color);
+        color: var(--text-color);
+        text-shadow: 50px orange;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .box-3 {
+        width: var(--box-width);
+        height: var(--box-hight);
+        padding: 5px;
+        background: var(--bg-color);
+        color: var(--text-color);
+        text-shadow: orange;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .box-4 {
+        width: var(--box-width);
+        height: var(--box-hight);
+        padding: 5px;
+        background: var(--bg-color);
+        color: var(--text-color);
+        text-shadow: orange;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-1">Box 1</div>
+      <div class="box-2">Box 2</div>
+      <div class="box-3">Box 3</div>
+      <div class="box-4">Box 4</div>
+    </div>
+  </body>
+</html>
