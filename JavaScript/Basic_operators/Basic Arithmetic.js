@@ -50,5 +50,9 @@ const num7 = -6;
 console.log(num7 < -5 || num7 > 10);
 
 // 12
-const num8 = 44;
+const isNum9 = true
+console.log(!isNum9);
+
+// 13
+const num8 = 15;
 console.log((num8 > 5 && num8 < 10) || (num8 > 20 && num8 < 30));
