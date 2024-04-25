@@ -55,7 +55,7 @@ function removeRating(movieTitle) {
     if (movieRatings[i][0] === movieTitle) {
       movieRatings.splice(i, 1);
       return;
-    } 
+    }
     // else {
     //   console.log(`movie not found`);
     // }
@@ -65,29 +65,25 @@ function removeRating(movieTitle) {
 removeRating(`Inception`);
 console.log(movieRatings);
 
-
 // 6
 function listMovies() {
   for (let i = 0; i < movieRatings.length; i++) {
-   console.log(`${movieRatings[i][0]} - ${movieRatings[i][1]}`);
-   
+    console.log(`${movieRatings[i][0]} - ${movieRatings[i][1]}`);
   }
 }
-listMovies()
+listMovies();
 
 // 7
 function highestRatedMovie() {
-  let highestRating1 = 0
+  let highestRating1 = 0;
   for (let i = 0; i < movieRatings.length; i++) {
-
-    if (movieRatings[i][1]> highestRating1 ) {
-      highestRating1 = movieRatings[i]
-    console.log(highestRating1);
-    return;
-  }
-  else {
-    `no movies`
-  }
+    if (movieRatings[i][1] > highestRating1) {
+      highestRating1 = movieRatings[i];
+      console.log(highestRating1);
+      return;
+    } else {
+      `no movies`;
+    }
   }
 }
 highestRatedMovie();
@@ -96,111 +92,102 @@ highestRatedMovie();
 
 // 1. Average Rating
 function calculateAverageRating() {
-  const input =  [3, 4, 5, 3, 5]
-  
-    let sum = 0;
-    for (let i = 0; i < input.length; i++) {
-      sum += input[i];
-    }
-    console.log(sum / input.length);
+  const input = [3, 4, 5, 3, 5];
+
+  let sum = 0;
+  for (let i = 0; i < input.length; i++) {
+    sum += input[i];
   }
-calculateAverageRating()
+  console.log(sum / input.length);
+}
+calculateAverageRating();
 
 // 2. Filter Movies by Rating
-function filterByRating()  {
-  const movieRatingss = [3, 4, 5, 2, 1, 5]
-  let minimum = 4
+function filterByRating() {
+  const movieRatingss = [3, 4, 5, 2, 1, 5];
+  let minimum = 4;
   for (let i = 0; i < movieRatingss.length; i++) {
-    
-    if (movieRatingss[i] >= minimum
-    ) {
+    if (movieRatingss[i] >= minimum) {
       console.log(movieRatingss[i]);
-      
     }
   }
 }
-filterByRating()
-
+filterByRating();
 
 // 3. Highest Rated Movie
 function findHighestRating() {
- const ratings =  [3, 4, 5, 3, 5]
- console.log(Math.max.apply(null, ratings));
+  const ratings = [3, 4, 5, 3, 5];
+  console.log(Math.max.apply(null, ratings));
 }
-findHighestRating()
-
+findHighestRating();
 
 // 4. Ratings Above Threshold
 function ratingAboveThreshold() {
   const ratings = [3, 4, 5, 2, 1, 5];
-  const threshold = 3
-  let arr = []
+  const threshold = 3;
+  let arr = [];
   for (let i = 0; i < ratings.length; i++) {
-    if (ratings[i]>threshold) {
+    if (ratings[i] > threshold) {
       arr.push(ratings[i]);
-     
+
       console.log(arr);
     }
   }
 }
-ratingAboveThreshold()
-
+ratingAboveThreshold();
 
 // 5. Count Movies in Rating Range
-function countInRatingRange()  {
+function countInRatingRange() {
   const ratings = [3, 4, 5, 2, 1, 5];
-  const lower = 4
-  const upper = 5
-  for (let i = 0; i < ratings.length; i++) {   
-    if (ratings[i]>=lower && ratings[i]<upper) {
+  const lower = 4;
+  const upper = 5;
+  for (let i = 0; i < ratings.length; i++) {
+    if (ratings[i] >= lower && ratings[i] < upper) {
       console.log(ratings[i]);
     }
   }
 }
-countInRatingRange()
+countInRatingRange();
 
 // 6. Filter Unique Ratings
-function uniqueRatings()  {
-  const movieRatings = [5, 3, 4, 3, 5, 4, 5];
-  const arr = []
-    movieRatings.forEach(element => {
-      if (!arr.includes(element)) {
-        arr.push(element)
-      }
-    } 
-    )
-    console.log(arr);
+function uniqueRatings(ratings) {
+  const arr = [];
+  for (let i = 0; i < ratings.length; i++) {
+    if (!arr.includes(ratings[i])) {
+      arr.push(ratings[i]);
+    }
   }
-uniqueRatings()
-
+  console.log(arr);
+  return;
+}
+uniqueRatings([5, 3, 4, 3, 5, 4, 5]);
 
 // 7. Merge Ratings
-let rating = []
-function mergeRatings()  {
+let rating = [];
+function mergeRatings() {
   const rating1 = [5, 3, 4];
   const rating2 = [2, 3, 5];
-  rating = rating1.concat(rating2)
- return [...new Set(rating)]
-} 
+  rating = rating1.concat(rating2);
+  return [...new Set(rating)];
+}
 console.log(mergeRatings(rating));
 
 // 8. Ratings Differential
-function ratingDifferential(rating1 , rating2) {
-      let sum = 0;
-      for (let i = 0; i < rating1.length; i++) {
-        sum += rating1[i];
-      }
-      let sum2 = 0
-      for (let i = 0; i < rating2.length; i++) {
-        sum2 += rating2[i];
-      }
-      console.log((sum / rating1.length) - (sum2 / rating2.length));
+function ratingDifferential(rating1, rating2) {
+  let sum = 0;
+  for (let i = 0; i < rating1.length; i++) {
+    sum += rating1[i];
+  }
+  let sum2 = 0;
+  for (let i = 0; i < rating2.length; i++) {
+    sum2 += rating2[i];
+  }
+  console.log(sum / rating1.length - sum2 / rating2.length);
 }
-ratingDifferential([4, 4, 4, 4, 5],[3, 3, 3, 3])
-
+ratingDifferential([4, 4, 4, 4, 5], [3, 3, 3, 3]);
 
 // 9. Filter Ratings by Multiple Criteria
-function filterRatingByCriteria(ratings,lessThan, greaterThan) {
+function filterRatingByCriteria(ratings, lessThan, greaterThan) {
   let arr = [];
   for (let i = 0; i < ratings.length; i++) {
     if (ratings[i] > greaterThan && ratings[i] < lessThan) {
@@ -208,11 +195,9 @@ function filterRatingByCriteria(ratings,lessThan, greaterThan) {
     }
   }
   console.log(arr);
-  return arr
+  return arr;
 }
-filterRatingByCriteria([1,2,3,4,5],5,2)
-
-
+filterRatingByCriteria([1, 2, 3, 4, 5], 5, 2);
 
 // Bonus Exercises
 
