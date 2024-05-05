@@ -2,87 +2,83 @@
 
 // 1. Movie Title Capitalization
 const movieTitle = "the dark knight";
-for (let i = 0; i < movieTitle.length; i++) {
-  
-  
+let newTitle = [];
+newTitle = movieTitle.split(" ", 3);
+for (let i = 0; i < newTitle.length; i++) {
+  let title = newTitle[i][0].toUpperCase() + newTitle[i].slice(1);
+  console.log(title);
 }
 
-// Split the string into an array of words
-const words = movieTitle.split(" ");
-
-// Capitalize the first letter of each word
-const capitalizedWords = words.map(
-  (word) => word.charAt(0).toUpperCase() + word.slice(1)
-);
-
-// Join the capitalized words back into a single string
-const capitalizedTitle = capitalizedWords.join(" ");
-
-console.log(capitalizedTitle);
+// const words = movieTitle.split(" ");
+// const capitalizedWords = words.map(
+// (word) => word.charAt(0).toUpperCase() + word.slice(1)
+// );
+// const capitalizedTitle = capitalizedWords.join(" ");
+// console.log(capitalizedTitle);
 
 // 2. Search Bar
 const movieTitles = ["The Dark Knight", "Inception", "Interstellar"];
 const query = "In";
+let arr = [];
+for (let i = 0; i < movieTitles.length; i++) {
+  if (movieTitles[i].includes(query)) {
+    arr.splice(0, 0, movieTitles[i]);
+  }
+}
+console.log(arr);
 
 // 3. Director's Name Format
 const directorName = "Nolan, Christopher";
+let newDirectorName = [];
+let director = "";
 
+newDirectorName = directorName.split(" ").reverse();
+director = newDirectorName.join();
+
+console.log(director.replaceAll(",", " "));
 // 4. Movie Length
 const movieLength = "2h 30min";
+let time = movieLength.split(" ");
+
+let h = parseInt(time[0]);
+let min = parseInt(time[1]);
+
+console.log(`${h} horus and ${min} minutes`);
 
 // 5. Movie Initials
 const titleForInitials = "The Dark Knight";
+let acronym = titleForInitials.split(" ");
+let acro = "";
+for (let i = 0; i < acronym.length; i++) {
+  acro += acronym[i][0];
+}
+console.log(acro);
+
 
 // 6. Format Movie Information String
 const movieDetails = "Inception|Christopher Nolan|Sci-Fi";
+let details = movieDetails.split('|')
+for (let i = 0; i < details.length; i++) {
+  details[i] = details[i].split(" ");
+  let moviee = details[0]
+  let director = details[1]
+  let genre = details[2]
+  console.log(`${moviee}, directed by ${director}, genre: ${genre}`);
+  return
+}
 
 // 7. Movie Slug
 const titleForSlug = "The Dark Knight";
+console.log(titleForSlug.toLowerCase().replaceAll(" ","-"));
+
 
 // 8. Synopsis Trimming
 const synopsis =
   "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO. But his tragic past may doom the project and his team to disaster.";
 const maxSynopsisLength = 100;
 
+
 // 9. Genre List
 const genres = "Action,Adventure,Sci-Fi";
-
-// Function placeholders for implementation of the exercises
-function capitalizeTitle(title) {
-  // Implement capitalization logic here
-}
-
-function filterMovies(titles, query) {
-  // Implement search filtering logic here
-}
-
-function reformatDirectorName(name) {
-  // Implement name reformatting logic here
-}
-
-function extractMovieLength(lengthStr) {
-  // Implement length extraction logic here
-}
-
-function getMovieInitials(title) {
-  // Implement initials extraction logic here
-}
-
-function formatMovieDetails(details) {
-  // Implement details formatting logic here
-}
-
-function createMovieSlug(title) {
-  // Implement slug creation logic here
-}
-
-function trimSynopsis(synopsis, maxLength) {
-  // Implement synopsis trimming logic here
-}
-
-function splitGenres(genreStr) {
-  // Implement genre splitting logic here
-}
-
-// Example of calling a function (uncomment and replace functionName with actual function names to test)
-// console.log(functionName(arguments));
+const arrGenres = genres.split(",")
+console.log(arrGenres);
