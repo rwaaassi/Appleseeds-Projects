@@ -5,6 +5,8 @@ const movie = {
   rating: 8.8,
   genre: "Science Fiction",
 };
+const { title, year, rating, genre } = movie;
+console.log(title, year, rating);
 
 // 2
 let topMovies = [
@@ -13,6 +15,14 @@ let topMovies = [
   "The Dark Knight",
   "12 Angry Men",
 ];
+let [TheShawshankRedemption, TheGodfather, TheDarkKnight, AngryMen] = topMovies
+[TheShawshankRedemption, TheGodfather, TheDarkKnight, AngryMen] = [
+  TheGodfather,
+  TheShawshankRedemption,
+  TheDarkKnight,
+  AngryMen,
+];
+console.log(TheShawshankRedemption, TheGodfather);
 
 // 3
 const movieRatings = {
