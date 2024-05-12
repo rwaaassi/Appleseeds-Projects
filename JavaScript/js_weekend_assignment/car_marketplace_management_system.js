@@ -796,7 +796,9 @@ class CarManager {
 
   // Retrieve all cars available for purchase.
   // @return {object[]} - Array of cars
-  getAllCars() {}
+  getAllCars() {
+
+  }
 
   // Search for cars based on certain criteria.
   // @param {number} year - The production year of the car
@@ -804,30 +806,38 @@ class CarManager {
   // @param {string} brand - The brand of the car
   // @return {object[]} - Array of cars that meet the criteria
   searchCars(year, price, brand) {
-    for (const car of this.agencies) {
+    for (const agency of this.agencies) {
+        for (const car of agency.cars)
       if (
-        car.cars[0].brand === brand &&
-        car.cars[0].models[0].year === year &&
-        car.cars[0].models[0].price === price
+        car.brand === brand &&
+        car.models[0].year === year &&
+        car.models[0].price === price
       ) {
         return car;
       }
     }
   }
-
+  
   // Return the most expensive car available for sale.
   // @return {object} - The most expensive car
   getMostExpensiveCar() {
-    // for (const car of this.agencies) {
-    //     return {
-    //         car: car.cars.models.sort(price)
-    //     }
-    // }
-  }
+      let max = 0
+      for (const car of this.agencies) {
+          max = Math.max(car.cars[0].models[0].price);
+          return max
+        }
+    }
+  
 
   // Return the cheapest car available for sale.
   // @return {object} - The cheapest car
-  getCheapestCar() {}
+  getCheapestCar() {
+       let min = 0;
+       for (const car of this.agencies) {
+         min = Math.min(car.cars[0].models[0].price);
+         return min
+       }
+  }
 }
 
 class CarPurchaseManager {
@@ -994,4 +1004,4 @@ console.log(searchForCar.searchCars(`car is`, 2015, 137000, "bmw"));
 const carForCustomer = new CarPurchaseManager(agencies, customers);
 console.log(carForCustomer.sellCar("AZJZ4", "BGzHhjnE8"));
 const expensiveCar = new CarManager(agencies);
-// console.log(expensiveCar.getMostExpensiveCar());
+console.log(expensiveCar.getMostExpensiveCar());
