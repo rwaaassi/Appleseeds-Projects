@@ -15,13 +15,9 @@ let topMovies = [
   "The Dark Knight",
   "12 Angry Men",
 ];
-let [TheShawshankRedemption, TheGodfather, TheDarkKnight, AngryMen] = topMovies
-[TheShawshankRedemption, TheGodfather, TheDarkKnight, AngryMen] = [
-  TheGodfather,
-  TheShawshankRedemption,
-  TheDarkKnight,
-  AngryMen,
-];
+let [TheShawshankRedemption, TheGodfather, TheDarkKnight, AngryMen] =
+  (topMovies[(TheShawshankRedemption, TheGodfather, TheDarkKnight, AngryMen)] =
+    [TheGodfather, TheShawshankRedemption, TheDarkKnight, AngryMen]);
 console.log(TheShawshankRedemption, TheGodfather);
 
 // 3
@@ -38,9 +34,8 @@ const updates = {
 // 4
 const list1 = ["The Shawshank Redemption", "The Godfather", "The Dark Knight"];
 const list2 = ["Forrest Gump", "Inception", "The Godfather"];
-const combined = [...list1 , ...list2]
+const combined = [...list1, ...list2];
 if (list1) {
-    
 }
 console.log(combined);
 
@@ -53,7 +48,7 @@ const movieDetails1 = {
     third: "Ellen Page",
   },
 };
-const {movieTitle,cast} = movieDetails
+const { movieTitle, cast } = movieDetails;
 
 console.log();
 
@@ -67,7 +62,6 @@ const additionalInfo = {
   year: 2010,
   rating: 8.8,
 };
-
 
 // 7
 const movieDetails2 = {
