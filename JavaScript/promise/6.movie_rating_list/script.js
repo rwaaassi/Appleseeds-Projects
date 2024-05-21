@@ -9,74 +9,73 @@ class Movie {
     return this.title;
   }
   getReleaseDate() {
+    // let month = this.releaseDate.slice(5, 7);
+    // const monthNames = [
+    //   "January",
+    //   "February",
+    //   "March",
+    //   "April",
+    //   "May",
+    //   "June",
+    //   "July",
+    //   "August",
+    //   "September",
+    //   "October",
+    //   "November",
+    //   "December",
+    // ];
+    // let monthName = monthNames[parseInt(month) - 1];
+    // let localizedDate =
+    //   this.releaseDate.slice(0, 5) + monthName + this.releaseDate.slice(7);
+    // return localizedDate;
+
     let month = this.releaseDate.slice(5, 7);
-    const monthNames = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ];
-    let monthName = monthNames[parseInt(month) - 1];
+
+    let monthName;
+    switch (month) {
+      case "01":
+        monthName = "January";
+        break;
+      case "02":
+        monthName = "February";
+        break;
+      case "03":
+        monthName = "March";
+        break;
+      case "04":
+        monthName = "April";
+        break;
+      case "05":
+        monthName = "May";
+        break;
+      case "06":
+        monthName = "June";
+        break;
+      case "07":
+        monthName = "July";
+        break;
+      case "08":
+        monthName = "August";
+        break;
+      case "09":
+        monthName = "September";
+        break;
+      case "10":
+        monthName = "October";
+        break;
+      case "11":
+        monthName = "November";
+        break;
+      case "12":
+        monthName = "December";
+        break;
+      default:
+        monthName = "Unknown";
+    }
     let localizedDate =
       this.releaseDate.slice(0, 5) + monthName + this.releaseDate.slice(7);
+
     return localizedDate;
-
-    // let month = this.releaseDate.charAt(6) + this.releaseDate.charAt(7);
-
-    // switch (month) {
-    //   case "01":
-    //     month = "January";
-    //     break;
-    //   case "02":
-    //     month = "February";
-    //     break;
-    //   case "03":
-    //     month = "March";
-    //     break;
-    //   case "04":
-    //     month = "April";
-    //     break;
-    //   case "05":
-    //     month = "May";
-    //     break;
-    //   case "06":
-    //     month = "June";
-    //     break;
-    //   case "07":
-    //     month = "July";
-    //     break;
-    //   case "08":
-    //     month = "August";
-    //     break;
-    //   case "09":
-    //     month = "September";
-    //     break;
-    //   case "10":
-    //     month = "October";
-    //     break;
-    //   case "11":
-    //     month = "November";
-    //     break;
-    //   case "12":
-    //     month = "December";
-    //     break;
-
-    //   default:
-    //     month = "null";
-    //     break;
-    // }
-    // let localizedDate =
-    //   this.releaseDate.slice(0, 5) + month + this.releaseDate.slice(7);
-
-    // return localizedDate;
   }
   getPicture() {
     return this.picture;
