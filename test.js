@@ -1,13 +1,25 @@
-const releaseDate = "2023-07-19"
-const month = releaseDate.charAt(5) + releaseDate.charAt(6)
-console.log(month);
-console.log(typeof month);
+// It's pretty straightforward. Your goal is to create a function that removes the first and last
+// characters of a string. You're given one parameter, the original string. You don't have to worry
+// with strings with less than two characters.
 
-const movieRatings = {
-  "The Matrix": 8.7,
-  Inception: 8.8,
-};
-function spread(movieRatings) {
-    return movieRatings
+const str = "hello"
+function removeString (string) {
+  // const str2 = string.split()
+
+
+console.log(string.substring(1,4));
+// console.log(str2.shift() && str2.unshift());
 }
-spread(...movieRatings)
+removeString(str)
+console.log();
+
+// Write a function named `getSumOfNumbers` that takes an array of numbers and returns the sum of all the numbers.
+
+function getSumOfNumbers (arr) {
+const sum =  arr.reduce((acc, val) => 
+  acc + val
+, 0 )
+return sum
+}
+
+console.log(getSumOfNumbers([1, 2, 3, 4, 5]));
